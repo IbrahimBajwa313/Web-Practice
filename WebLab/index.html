@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <h3>Task 1: Handle onfocus and onblur events</h3>
+    <input type="text" id="myTextField" placeholder="Click to focus">
+
+    <script>
+        const textField = document.getElementById('myTextField');
+
+        // Event handler for onfocus
+        textField.onfocus = function() {
+            console.log('Text field is focused');
+        };
+
+        // Event handler for onblur
+        textField.onblur = function() {
+            console.log('Text field lost focus');
+        };
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+
+<h1>Task 1</h1>
+  <h3> Handle onfocus and onblur events</h3>
+    <input type="text" id="myTextField" placeholder="Click to focus">
+
+    <h3>Task 2: Alert when image is clicked</h3>
+    <img src="projectImage1.png" alt="Placeholder Image" id="myImage">
+ 
+    <h3>Task 3: Image Slideshow</h3>
+    <img id="slideshow" src="https://via.placeholder.com/300" alt="Slideshow" width="300" height="200">
+
+    <script>
+        const image = document.getElementById('myImage');
+
+        image.onclick = function() {
+            alert('Image clicked!');
+        };
+
+        const textField = document.getElementById('myTextField');
+
+        // Event handler for onfocus
+        textField.onfocus = function() {
+            console.log('Text field is focused');
+        };
+
+        // Event handler for onblur
+        textField.onblur = function() {
+            console.log('Text field lost focus');
+        };
+
+        const images = [
+            "projectImage1.png",
+            "projectImage2.png",
+            "projectImage3.png" 
+        ];
+
+        let currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('slideshow').src = images[currentIndex];
+        }
+
+        setInterval(changeImage, 2000); 
+    </script>
+</body>
+</html> -->
+
+
+ 
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>

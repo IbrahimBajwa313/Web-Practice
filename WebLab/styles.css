@@ -1,0 +1,497 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background for the entire website */
+  color: white; /* Default text color as white */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: white; /* White headings */
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6; /* Light blue links */
+}
+
+a:hover {
+  color: #1f6fbb; /* Darker blue on hover */
+  transition: color 0.3s;
+}
+/* Header Styles */
+.header {
+  background-color: #121212;  /* Dark background */
+  padding: 0.5rem;  /* Padding for some space inside the header */
+  border-bottom: solid white;
+}
+
+.container {
+  display: flex;  /* Makes the child elements (logo and nav-menu) behave like flex items */
+  justify-content: space-between;  /* Aligns the logo to the left and nav to the right */
+  align-items: center;  /* Centers the items vertically */
+  margin: 0 auto;  /* Centers the container horizontally */
+}
+
+.logo {
+  font-size: 1.8rem;  /* Makes the font bigger */
+  color: #3b82f6;  /* Light blue color for the name */
+  font-weight: bold;  /* Makes the text bold */
+}
+
+.nav-menu {
+  list-style-type: none;  /* Removes the default bullet points from the list */
+  display: flex;  /* Aligns the list items in a row */
+  gap: 1.5rem;  /* Adds space between the links */
+}
+
+.nav-menu li a {
+  color: #ccc;  /* Light gray text for links */
+  font-size: 1.2rem;  /* Slightly larger text for readability */
+  text-decoration: none;  /* Removes underline from the links */
+}
+
+.nav-menu li a:hover {
+  color: #ffffff;  /* Changes link color on hover */
+  transition: color 0.3s;  /* Smooth transition for the hover effect */
+}
+
+/* General reset for layout consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background for the entire website */
+  color: white; /* Default text color as white */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;  /* Stacks the logo and nav menu vertically */
+    align-items: flex-start;  /* Aligns items to the left */
+  }
+
+  .logo {
+    font-size: 1.5rem;  /* Smaller logo font for mobile screens */
+  }
+
+  .nav-menu {
+    flex-direction: column;  /* Stack nav items vertically */
+    gap: 0.8rem;  /* Adjust space between items */
+    width: 100%;  /* Ensure the nav takes full width */
+    align-items: flex-start;  /* Align links to the start */
+    padding: 0.5rem 0;  /* Add padding for spacing */
+  }
+
+  .nav-menu li a {
+    font-size: 1rem;  /* Slightly smaller font size for mobile screens */
+  }
+}
+
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh; /* Full height of the viewport */
+  padding: 4rem 2rem; /* More padding to provide breathing room */
+  background: linear-gradient(145deg, #1a1a1a, #121212); /* Subtle gradient background */
+}
+
+.hero-content {
+  max-width: 50%;
+  text-align: left; /* Left align for content */
+}
+
+
+.hero-title {
+  font-size: 6rem;
+  color: #007BFF; /* Blue title */
+  font-weight: bold;
+  text-align: left;
+  
+  line-height: 1.1;
+}
+
+.h-title {
+  
+  color: white; 
+}
+.hero-description {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;  /* Restrict max width for better readability */
+  color: #ccc; /* Light gray description */
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.cv-btn {
+  background-color: transparent;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+.cv-btn:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Hero image styling */
+.hero-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1rem;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3); /* Soft glow effect for the image */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center; /* Center text on mobile */
+      padding: 3rem 2rem; /* Adjust padding for mobile */
+  }
+
+  .hero-content {
+      max-width: 100%;
+  }
+
+  .hero-title {
+      font-size: 3rem; /* Smaller title on mobile */
+  }
+
+  .hero-description {
+      font-size: 1rem;
+  }
+
+  .hero-image img {
+      width: 200px; /* Smaller image size for mobile */
+      margin-top: 2rem;
+  }
+
+  .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+  }
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 4rem 2rem; /* Increase padding for better spacing */
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text for better contrast */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensure flexibility on smaller screens */
+  gap: 5rem; /* Add space between image and text */
+  justify-content: center; /* Center content horizontally */
+  margin-inline: 1rem;
+}
+
+.about-image img {
+  width: 100%; /* Make image responsive */
+  max-width: 500px; /* Limit image width */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+}
+
+.about-text {
+  max-width: 600px; /* Restrict the width of text for readability */
+}
+
+.about-text h2 {
+  text-align: left;
+  color: #3b82f6; /* Blue heading */
+  font-size: 2.5rem; 
+  
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills-section h3 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3b82f6; /* Blue for skill heading */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Make the skills responsive and wrap */
+  gap: 1rem;
+  padding: 0;
+  list-style: none; /* Remove bullets from list */
+}
+
+.skills-list li {
+  background-color: #1a1a1a; /* Dark background for skills */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  color: #ffffff; /* White text */
+}
+
+/* Projects Section Styles */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #121212; /* Dark grayish black background */
+  color: white;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap; /* Allows the projects to wrap on smaller screens */
+  justify-content: center; /* Center-aligns the project cards */
+}
+
+.project {
+  background-color: #1a1a1a; /* Dark background for project cards */
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the content fits within the rounded borders */
+  padding: 1.5rem;
+  max-width: 300px; /* Limits the max width of the project cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Stronger shadow on hover */
+}
+
+.project-image {
+  width: 100%; /* Make image responsive */
+  max-width: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3b82f6; /* Light blue color for project titles */
+}
+
+.project p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #cccccc; /* Light gray for descriptions */
+}
+
+.project-text {
+  
+  text-align: center;
+  color: white; /* Blue heading */
+  font-size: 2.5rem; 
+  margin-bottom: 1rem;
+}
+
+.project a {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #1f6fbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column; /* Stack projects vertically */
+  }
+
+  .project {
+    max-width: 100%; /* Allow project cards to fill the screen width */
+  }
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Stacks content on smaller screens */
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a; /* Dark form background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow for inputs */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #3b82f6; /* Blue focus state */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1f6fbb; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info, .contact-form {
+    min-width: 100%; /* Full width on mobile */
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #121212;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b82f6; /* Blue logo text */
+}
+
+.footer-rights {
+  color: #7D7D7D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
